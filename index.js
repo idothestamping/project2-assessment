@@ -1,5 +1,5 @@
 // //enviroment variables
-// require('dotenv').config();
+require('dotenv').config();
 var express = require('express');
 var request = require('request');
 var layouts = require('express-ejs-layouts');
