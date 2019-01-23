@@ -1,0 +1,24 @@
+<div class="row">
+        <div class="mobilefriendlytext">Your Animals!</div>
+     
+    <% animal.forEach(function(animal) { %>    
+          <div class="col s12 m4">
+            <div class="card medium">
+              <div class="card-image">
+                <img src="<%= animal.image_url %>">
+                <% if (animal.extinct === true) { %>
+                <span class="card-title" style="color: red"><%= animal.species_name %></span>
+                <% } else{ %>  
+                    <span class="card-title"><%= animal.species_name %></span>
+                <% } %>  
+              </div>
+              <div class="card-content">
+                <p><%= animal.description %></p>
+              </div>
+              <div class="card-action">
+                <a href="https://en.wikipedia.org/wiki/<%= animal.species_name %>"><i class="material-icons">find_in_page</i>Wikipedia!</a>
+            </div>
+            </div>
+          </div>            
+          <% }); %>
+    

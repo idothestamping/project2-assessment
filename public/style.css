@@ -1,0 +1,39 @@
+.navbar {
+	min-height: 50px;
+	margin-bottom: 50px;
+	padding-bottom: 20px;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+    font-size: 20px;
+}
+
+.card-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-title {
+    text-shadow: 3px 3px 4px #323232;
+    color: white;
+    font-size: 40px !important;
+}
+
+.card-content {
+    font-style: italic;
+}
+
+@media screen and (min-width: 601px) {
+	div.mobilefriendlytext {
+	  font-size: 50px;
+	}
+}
+  
+@media screen and (max-width: 600px) {
+	div.mobilefriendlytext {
+		font-size: 30px;
+	}
+}
